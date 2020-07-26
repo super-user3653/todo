@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: #ffffff;
+            font-family: monospace;
+ 
+
+        }
+        .topbtn, .editbtn, .delbtn{
+            background-color: rgb(173, 173, 173);
+            border: 1px solid gray;
+            font-size: 110%;
+            padding: 10px 15px;
+            margin: 5px;
+            color: white;
+
+        }
+
+        *{
+            margin: 5px;
+
+        }
+        input{
+            padding: 13px 1%;
+            font-size: 130%;
+            font-family: monospace;
+            color: black !important;
+            width: 50%;
+            margin-left: -20px;
+
+        }
+        input::placeholder{
+
+            color: rgb(12, 151, 121);
+            font-weight: 900;
+
+            
+        }
+        *{
+            
+            text-align: center;
+            color: white;
+           
+        }
+        ul{
+            list-style: none;
+            text-decoration: none;
+        }
+        .editbtn, .delbtn{
+            
+            background-color: rgb(173, 173, 173);
+            border: 1px solid gray;
+            font-size: 100%;
+            padding: 2% 3%;
+            margin: 5px;
+            color: white;
+            float: right;
+            
+
+        }
+        .delbtn{
+            margin-right: 15px;
+            width: 42%;
+        }
+.tdotext{
+ 
+    display: inline-flex;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content: center;">
+    <div style="justify-content: center; text-align: center; margin: 10px; background-color:#35b8e0; width: 60%; height: 800px !important; padding: 50px; border-radius: 50px; height: fit-content !important;">
+    <div>
+        <input placeholder="Enter To Do" type="text" id="todo-item">
+        <button onclick="addTodo()" class="topbtn">ADD</button>
+        <button onclick="delall()" class="topbtn">REMOVE ALL</button>
+    </div>
+    <div>
+        <ul id="list">
+
+        </ul>
+    </div>
+</div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
